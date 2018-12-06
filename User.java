@@ -5,12 +5,12 @@ import java.lang.Exception;
 
 public class User implements Wallet{
   private String name;
-  private int id;
+  private String id;
   private Account defAccount;
   private Set<Account> wallet;
   private static AtomicLong count = new AtomicLong();
 
-  public User(String name_, int id_){
+  public User(String name_, String id_){
     name = name_;
     id = id_;
     createWallet();
